@@ -64,18 +64,19 @@ color:#2563eb;
 }
 
 .hero{
-padding:120px 0;
+padding:180px 0;
 text-align:center;
-background:white;
+background:linear-gradient(135deg,#ffffff 0%,#eef5ff 100%);
 }
 
 .hero h2{
-font-size:56px;
+font-size:64px;
+font-weight:700;
 max-width:900px;
 margin:auto;
 margin-bottom:25px;
-line-height:1.2;
-}
+line-height:1.1;
+
 
 .hero p{
 font-size:21px;
@@ -133,14 +134,17 @@ margin-bottom:40px;
 
 .project-card{
 background:white;
-padding:40px;
-border-radius:18px;
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-transition:.3s;
+padding:45px;
+border-radius:20px;
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+transition:.35s;
+border:1px solid #edf2f7;
 }
 
+
 .project-card:hover{
-transform:translateY(-6px);
+transform:translateY(-10px);
+box-shadow:0 28px 55px rgba(37,99,235,.12);
 }
 
 .project-card h3{
@@ -167,14 +171,17 @@ gap:30px;
 
 .small-card{
 background:white;
-padding:35px;
+padding:40px;
 border-radius:18px;
-box-shadow:0 12px 25px rgba(0,0,0,.06);
+border:1px solid #edf2f7;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
 transition:.3s;
 }
 
+
 .small-card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(37,99,235,.10);
 }
 
 .small-card h3{
@@ -222,6 +229,42 @@ font-size:18px;
 
 .section h2{
 font-size:30px;
+}
+
+::selection{
+background:#2563eb;
+color:white;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+h1,h2,h3{
+letter-spacing:-1px;
+}
+
+.section{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
 }
 
 }
